@@ -65,6 +65,17 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // Navigation
+    val nav_version = "2.8.2"
+
+    // Jetpack Compose integration
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+
+    // Views/Fragments integration
+    implementation("androidx.navigation:navigation-fragment:$nav_version")
+    implementation("androidx.navigation:navigation-ui:$nav_version")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0-alpha03")
+
     //Room DB
     val room_version = "2.6.1"
 
